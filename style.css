@@ -1,0 +1,420 @@
+body {
+    margin: 0;
+}
+
+/* Header */
+.Header {
+    position: fixed;
+    z-index: 1000000;
+    padding: 0;
+    background-color: #a7bd8b;
+    width: 100%;
+    height: 70px;
+}
+
+.Header_contents {
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    height: 70px;
+    padding: 16px 20px;
+    font-size: 30px;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Header_contents a {
+    color: white;
+    text-decoration-line: none;
+}
+
+.Header_home_btn {
+    float: left;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.Header_menu {
+    float: left;
+}
+
+.Header_menu_navigation {
+    float: left;
+    width: fit-content;
+    padding: 0 16px;
+    cursor: pointer;
+}
+
+a:hover {
+    color: #d77d6f;
+}
+
+/* 표지 부분 */
+.banner {
+    width: 100%;
+    height: 70px;
+    background-color: #ede0ba;
+}
+
+.portpolio_home {
+    padding: 0;
+    background-color: #ede0ba;
+    width: 100%;
+    height: 630px;
+    display: flex;
+}
+
+.home_contents {
+    box-sizing: border-box;
+    padding: 64px 40px;
+    width: 50%;
+    height: 630px;
+    flex: 1;
+}
+
+.home_title {
+    box-sizing: border-box;
+    padding: 64px 32px;
+    padding-bottom: 32px;
+    font-size: 80px;
+    color: #d77d6f;
+    font-family: 'Frank Ruhl Libre', serif;
+}
+
+.contact {
+    box-sizing: border-box;
+    margin-left: 35px;
+    display: flex;
+}
+
+.contact button {
+    width: 100px;
+    height: 100px;
+    color: #d77d6f;
+    background-color: white;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.contact a {
+    color: #d77d6f;
+}
+
+.contact button:hover {
+    color: #d77d6f;
+    box-shadow: 0 0 20px #73a598;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.log-btn {
+
+    font-size: 25px;
+}
+
+.home_photo{
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: 64px;
+    width: 80%;
+    height: 630px;
+    flex: 1;
+}
+
+.home_photo img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* About me */
+.about_contain{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    background-color: #d77d6f;
+    width: 100%;
+    height: 750px;
+}
+
+.about_me {
+    margin: 50px auto;
+    font-size: 80px;
+    font-family: 'Frank Ruhl Libre', serif;
+    color: white;
+}
+
+.contents {
+    display: flex;
+    flex-direction: row;
+}
+
+.text_item {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 30px;
+    color: white;
+    padding-top: 5%;
+    padding-left: 10%;
+    width: 50%;
+}
+
+.hobbies_slider {
+    width: 500px;
+    height: 500px;
+}
+
+.hobbies_contain {
+    width: 400px;
+    height: 400px;
+    box-shadow: 0px 0px 3px grey;
+    position: relative;
+    overflow: hidden;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+    position: absolute;
+}
+
+.btn {
+    margin-top: 15px;
+    margin-left: 42%;
+}
+
+.btn button {
+    font-size: 25px;
+    padding: 5px;
+    background-color: #73a598;
+    border: none;
+    border-radius: 20%;
+    color: #FFF;
+    margin-right: 5px;
+}
+
+.btn button:hover {
+    background-color: #ede0ba;
+    color: #d77d6f;
+}
+
+/* Skill Part */
+.skill_contain {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    background-color: #ede0ba;
+    width: 100%;
+    height: 600px;
+}
+
+.skill_title {
+    margin: 50px auto;
+    font-size: 80px;
+    font-family: 'Frank Ruhl Libre', serif;
+    color: #d77d6f;
+}
+
+.skill_contents {
+    display: grid;
+    grid-gap: 16px;
+    padding: 16px;
+    max-width: 1024px;
+    margin-inline: auto;
+}
+
+@media screen and (min-width: 600px) {
+    .skill_contents {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .skill_contents {
+        grid-template-columns: 1fr;
+    }
+}
+
+.skill_contents .set {
+    background-color: #73a598;
+    color: white;
+    padding: 24px;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.skill_contents .set:hover {
+    box-shadow: 0px 12px 16px #36363624;
+}
+
+.set span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    font-size: 48px;
+    background-color: white;
+    color: #d77d6f;
+    border-radius: 35%;
+    margin-inline: auto;
+}
+
+.set header {
+    padding-block: 24px;
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.set .list {
+    padding-block: 8px;
+    display: grid;
+    grid-template-columns: 1fr 28px;
+    color: rgb(205, 205, 205);
+    text-transform: uppercase;
+}
+
+.set:hover .list {
+    color: white;
+}
+
+/* Project Part */
+
+.project_contain {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    background-color: #d77d6f;
+    width: 100%;
+    height: 750px;
+    justify-content: center;
+}
+
+.project_title {
+    margin: 50px auto;
+    font-size: 80px;
+    font-family: 'Frank Ruhl Libre', serif;
+    color: white;
+}
+
+.project_contents {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    margin: 50px;
+    padding: 0;
+}
+
+.card-wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    width: 320px;
+    border-radius: 25px;
+    background-color: #FFF;
+    margin-right: 20px;
+}
+
+.image-content,
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+}
+
+.image-content {
+    position: relative;
+    row-gap: 5px;
+    padding: 25px 0;
+}
+
+.overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #73a598;
+    border-radius: 25px 25px 0 25px;
+}
+
+.overlay::before,
+.overlay::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background-color: #73a598;
+}
+
+.overlay::after {
+    border-radius: 0 25px 0 0;
+    background-color: #FFF;
+}
+
+.card-image {
+    position: relative;
+    height: 150px;
+    width: 250px;
+    border-radius: 5%;
+    background-color: #FFF;
+}
+
+.card-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5%;
+    border: 4px solid #4f7c70;
+}
+
+.card a {
+    color: #FFF;
+    text-decoration-line: none;
+}
+
+.name {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+}
+
+.descripttion {
+    font-size: 14px;
+    color: #707070;
+    text-align: center;
+}
+
+.project_btn {
+    border: none;
+    font-size: 16px;
+    color: #FFF;
+    padding: 8px 16px;
+    background-color: #73a598;
+    border-radius: 6px;
+    margin: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.project_btn:hover {
+    background: #4c756a;
+}
